@@ -2,9 +2,9 @@
 
 ## Introduction
 
-<img style="float: right" src="pics/Starting_position.jpg" alt="" title="The starting position" width="200"/>
-
 Ming Mang is a relatively unknown board game from Tibet and is played on an 8x8 board. It utilizes custodian capture of enemy pieces or a line of enemy pieces, and the captured pieces are replaced with the pieces of the player performing the capture(s); it thus resembles the games of Reversi and Othello in these respects. Each player's pieces are initially situated on two adjacent sides of the board (see figure), and move orthogonally any number of unoccupied spaces like the rook in chess. It is an elimination game, as the objective is to capture all of the opponent's pieces.
+
+<img style="float: right" src="pics/Starting_position.jpg" alt="" title="The starting position" width="200"/>
 
 The application was created as part of the Intelligent Search Techniques course of the Artificial Intelligence Master at the University of Maastricht in 2011. The AI implemented in the application uses an alpha-beta framework, with enhancements in the form of a transposition table, move ordering techniques, search reductions, search extensions and an automatic opening book creation.
 
