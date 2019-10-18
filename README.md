@@ -2,7 +2,7 @@
 
 ## Introduction
 
-<img align="right" src="pics/Starting_position.jpg" alt="" title="The starting position" width="200"/>
+<img align="right" src="pics/Starting_position.jpg" alt="" title="The starting position" width="180"/>
 
 Ming Mang is a relatively unknown board game from Tibet and is played on an 8x8 board. It utilizes custodian capture of enemy pieces or a line of enemy pieces, and the captured pieces are replaced with the pieces of the player performing the capture(s); it thus resembles the games of Reversi and Othello in these respects. Each player's pieces are initially situated on two adjacent sides of the board (see figure), and move orthogonally any number of unoccupied spaces like the rook in chess. It is an elimination game, as the objective is to capture all of the opponent's pieces.
 
@@ -14,16 +14,20 @@ The application was created as part of the Intelligent Search Techniques course 
 * A player is not allowed to move a piece that brings the game back to a previous position.
 * Capture of an enemy piece or a line of enemy pieces is done by the custodian method (also known as interception), and this must be created by the player performing the capture on his or her turn. The player's piece moves adjacently next to an enemy piece or line of enemy pieces that are already flanked on the other side by a friendly piece. All these pieces must be in the same row or column with no vacant space between any of them.
 * Captured enemy pieces are removed at the end of the turn, and immediately replaced by one of the captor's pieces from their stock pile.
+
+<center><img src="pics/Capture.jpg" title="Demonstration of two capture moves" alt="" width="600"/></center>
+
 * A player is allowed to move a piece between two of the enemy's pieces on a row or column (with no vacant space between any of them) without being captured, since the enemy did not create the custodian capture on their turn. One of the enemy pieces must move away, and then return to the same position to capture the sandwiched piece if the opportunity is still available.
     * Similarly, a player is allowed to move a piece next to a line of friendly pieces which together as a group are flanked on two opposite sides by enemy pieces on a row or column (with no vacant space between any of them) without any of them being captured, since the enemy did not create the custodian capture on their turn. One of the enemy pieces must move away, and then return to the same position to capture the sandwiched pieces if the opportunity is still available.
 * Multiple custodian captures can be performed in one turn. There are three general cases that exist:
     * A player moves their piece between two enemy pieces (or between two lines of enemy pieces) which are flanked on their respective opposite sides by a friendly piece (all of these pieces being on the same row or column with no space between any of them), this is cause for the capture of the enemy pieces. In this case, two custodian captures were performed but on one row or column only.
     * A player moves their piece between two enemy pieces (or between two lines of enemy pieces) in such a way that one of the enemy pieces (or one of the lines of enemy pieces) is on the same row, and the other enemy piece (or the other line of enemy pieces) is on the same column, and that each enemy piece (or each of the two lines of enemy pieces) is flanked on the other side by a friendly piece of the same row or column respectively (with no vacant space between any of them), this is cause for the capture of the two enemy pieces (or of the two lines of enemy pieces). In this case, two custodian captures were performed but one was on a row, and the other was on a column.
     * A player moves their piece between three enemy pieces (or between three lines of enemy pieces) in such a way that two of the enemy pieces (or two lines of enemy pieces) are on the same row (or column), and the third enemy piece (or third line of enemy pieces) is on the same column (or row), and that each enemy piece (each of the three lines of enemy pieces) is flanked on the other side by a friendly piece of the same row or column respectively (with no vacant space between any of them), this is cause for the capture of the three enemy pieces (or of the three lines of enemy pieces). In this case, three custodian captures were performed but two were on a row (or column), and the other was on a column (or row).
+
+<center><img src="pics/Ming_Mang.gif" alt="" title="Demonstration of two capture moves" width="600"/></center>
+
 * A player wins if he or she captures all of their opponent's pieces, or stalemates their opponent's pieces by not allowing them to move on their turn.
     * Alternatively, if both players pass consecutively or a set time limit is reached, the player wins that has largest territory, where a territory is defined as the squares on the board than can be reached by a player but not by the opponent in an infinite number of non-capturing moves.
-
-<img style="display:block; margin-left: auto; margin-right: auto;" src="pics/Capture.jpg" title="Demonstration of multiple capture moves" alt="" width="800"/>
 
 ## Architecture
 
