@@ -160,4 +160,4 @@ It can be seen from the table that all techniques increase the performance, i.e.
 2. Chess programming - magic bitboards, [https://www.chessprogramming.org/Magic_Bitboards](https://www.chessprogramming.org/Magic_Bitboards).
 3. D. Breuker, J. W. H. M. Uiterwijk, and H. J. V. D. Herik, "Replacement schemes for transposition tables", ICCA Journal, vol. 17, pp. 183-193, 1994.
 4. M. Guillaume, J. B. Hoock, J. Perez, A. Rimmel, O. Teytaud, and M. H. M. Winands, "Meta monte-carlo tree search for automatic opening book generation", personeelunimaasnl, no. 3, pp. 1-6, 2010.
-5. P. Audouard, G. Chaslot, J.-B. Hoock, A. Rimmel, J. Perez, and O. Teytaud, "Grid coevolution for adaptive simulations; application to the building of opening books in the game of go", 2009.
+5. P. Audouard, G. Chaslot, J.B. Hoock, A. Rimmel, J. Perez, and O. Teytaud, "Grid coevolution for adaptive simulations; application to the building of opening books in the game of go", 2009.
